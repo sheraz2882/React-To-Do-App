@@ -12,7 +12,7 @@ interface TodoComponentProps {
     onDelete: (id: number) => void;
 }
 
-const TodoComponent: React.FC<TodoComponentProps> = ({ todo, onToggle, onDelete }) => {
+const TodoComponent = ({ todo, onToggle, onDelete }: TodoComponentProps) => {
     return (
         <div className="todo-item">
             <input
